@@ -1,0 +1,782 @@
+[
+  {
+    "type": "Szűrt",
+    "name": "Arany Fácán Szűrt",
+    "id": "jBEN8QCdKoNrAW5WuF_heUaOiZYBJopRv2Na5SoHdlCs5iyYMGl6qCnJ0tVt0RtTnvUT_xeXHOg1kUk8GgbuCw==",
+    "brand": "Arany Fácán",
+    "price": "3010",
+    "alcohol": "0.05",
+    "ingredients": [
+      {
+        "id": "FB_2KVjNKtZRJI-y-L7HTrfwpk9HVYNXWi_fsTReaOoZA0Tb1nmfFTuSHNf_9ZsbWDH6txTx51J-kW_pc8s-vg==",
+        "ratio": "0.20",
+        "name": "só"
+      },
+      {
+        "id": "G5SNDTGTSi2GW9Ccf7a8uzrFERvvodFGDWpUfZ1_Rjrm47KSIrnR3ZkVkK5FYOhL3gBwdfK5Vmb-DNxKzaDY7w==",
+        "ratio": "0.11",
+        "name": "cukor"
+      },
+      {
+        "id": "Shpqy5Idn7yYLnMPPe6xgf4qsrS49tvhuGVdCOboCtMr_j6_x0rzo-CvCYGKs98IvTGjPIHsKGVGsti0apvPwA==",
+        "ratio": "0.19",
+        "name": "árpa"
+      }
+    ],
+    "isCan": true
+  },
+  {
+    "type": "Búza",
+    "name": "Arany Fácán Búza",
+    "id": "HH1ch0UhX2tJHB6FQJsvRK9CXKaqqDVuJdLInQ_t4UCCdj9u7XUwD-hEanMn__EaqsAXL_Bnn6rBEiUO_rMliw==",
+    "brand": "Arany Fácán",
+    "price": "2938",
+    "alcohol": "0.13",
+    "ingredients": [
+      {
+        "id": "_Tgqk5rSzTWNDqEBzL1xXlLa_dotthqbfGUrdmzdds_jtmGui0PjAqRjpwa-bzezcjWY7LrkLTJ9ijcj6Xme9A==",
+        "ratio": "0.17",
+        "name": "só"
+      },
+      {
+        "id": "nSS61mhFV7PE5emtVQHNcMzfgSqAqWvCXwjR7VvhRMlIFbIGSy7G73fCbInJ7bh4lGhzhc19Bd-yro0Rol4hYw==",
+        "ratio": "0.03",
+        "name": "cukor"
+      },
+      {
+        "id": "Elpq0BFrR09GRO7bo25smormXirVIwlVevh_APcCsRyIZ_2JVrDmjWrd6q00qyC9NsAmplMPuF3c8GlKqfR2oA==",
+        "ratio": "0.30",
+        "name": "árpa"
+      }
+    ],
+    "isCan": true
+  },
+  {
+    "type": "Barna",
+    "name": "Kőbányai Barna",
+    "id": "vYsIYk0WPyMXnc-R9WoM0sK_QSjBv4CVPVFrXrnUQ7UCFA0r8PBr9Z7qQxeV5Gy_z2wMAoj5u7OMmfpd7Tu08Q==",
+    "brand": "Kőbányai",
+    "price": "318",
+    "alcohol": "0.07",
+    "ingredients": [
+      {
+        "id": "atLppXfuvessJptlQyo_8wqeGTePqc-3SgnoWbzEcAXUNsEMHUeRQiKKII-WuygBHs1JIbpqaMKlIWEVOnfNrg==",
+        "ratio": "0.09",
+        "name": "só"
+      },
+      {
+        "id": "7RL0hghTTLKvQYe0kkeprF02M4LkdjicCAiH3j8xgJU1Hwb6Eucm1fOYkoNpXDQTn42BvW4j3iE3g8SdRcLAkA==",
+        "ratio": "0.19",
+        "name": "cukor"
+      },
+      {
+        "id": "oQBUm51nOHuvyQxJgr7hUcTzJopT_sGfB6WQgzb7hy8dW9JrHldoD8CcLZvfZbGlHMmJsI85PMkRiazN47WafA==",
+        "ratio": "0.22",
+        "name": "árpa"
+      }
+    ],
+    "isCan": true
+  },
+  {
+    "type": "Barna",
+    "name": "Arany Ászok Barna",
+    "id": "P1Gg217FWb9Jvxs-xciaMHQ891vHmaE-nhm6hVpdKDgusFH4CKEGReQxJ60o6f9gbM7NsiyyWvMGY6JeaIVJbw==",
+    "brand": "Arany Ászok",
+    "price": "429",
+    "alcohol": "0.08",
+    "ingredients": [
+      {
+        "id": "XLUquNg-jM2FANR3ni4vnec6s5ealPPuShhgbgNk9k-TzhoylyeAeCYXTlUYtu_fC0CTXQuVYCssxIDvuk1OSg==",
+        "ratio": "0.12",
+        "name": "só"
+      },
+      {
+        "id": "UUQuqsAcojqqA9J_ZO0nk0AS1s0UEACFXS7BKDWAvdiEPA0HyTyBIOJF3gEVPTIvHJhEsxKUSPJTRXFQD_2KIw==",
+        "ratio": "0.12",
+        "name": "cukor"
+      },
+      {
+        "id": "uVgHW0Qcdbj53epjzeJvYuIX0yiRwjYzAnb2oDR3GHrrAXaxi3iWx9it285MEgwSQ8Dx7RIIJ-jJBphJnICFDA==",
+        "ratio": "0.26",
+        "name": "árpa"
+      }
+    ],
+    "isCan": false
+  },
+  {
+    "type": "Búza",
+    "name": "Kőbányai Búza",
+    "id": "NpfQ946nJJfBO-q5-1pIf6bkHpRUcZqke3lAikIuWBG5O79-MlFvOXwX0fO9SqxttnHuK4J9KwOyVJE-IFmFXg==",
+    "brand": "Kőbányai",
+    "price": "2175",
+    "alcohol": "0.06",
+    "ingredients": [
+      {
+        "id": "mgbSmk3PCkTS-oFhLrZY4EsGl5B0ZezBBZFIluXzv5UIccmowdTGJnGmfVKJIxAWbp6c8XTF2pI5aZlpUMwzow==",
+        "ratio": "0.08",
+        "name": "só"
+      },
+      {
+        "id": "nZyv49Ja7G3XdeJ7XuF4X7_6mIutbJncsZG1OBFU-cTOiyH_LBWM-4Vi2fojbm9n--8UbdhxDFcysVf5JiM3WQ==",
+        "ratio": "0.22",
+        "name": "cukor"
+      },
+      {
+        "id": "j_qqNPHrhcDh1i9bnNYsAm9-mudUPss_tXz5BwDOSqKt515_X_Y-OHEyHzBNRgxCDHGt6fdDMTKb-jXRISBPMA==",
+        "ratio": "0.20",
+        "name": "árpa"
+      }
+    ],
+    "isCan": false
+  },
+  {
+    "type": "Világos",
+    "name": "Kőbányai Világos",
+    "id": "hMDOUXNnNTnW754NJqze0_kjnesJQGmemkdwRUFx7Cr6yKfQZ1z0nU7jbh7FOW6c-NNX8AJc_FqNVswCdgu5BQ==",
+    "brand": "Kőbányai",
+    "price": "1134",
+    "alcohol": "0.14",
+    "ingredients": [
+      {
+        "id": "gvSLT78r-obveSp8iENbTBvm4h4r-PvFmQdWbkKyGwQYf5ai35PfJ0K4Wcc8S4VvUXei7lmZgGDoDF6wFVULCA==",
+        "ratio": "0.09",
+        "name": "só"
+      },
+      {
+        "id": "or-VbFXurxYTDWNYcpa5X9d4AqILJhgzh2FDh6zRzdSV_-bUz9w6wCyHCn_rK0n_aw8s2-U1XngBcVQDilzPBQ==",
+        "ratio": "0.06",
+        "name": "cukor"
+      },
+      {
+        "id": "aCGInsfHTQOra_mNENUKUXWtTCiCOUURMm3yOPV1LdMfg_50nTlZLU3NGy_i9xIVaTw6LwxWpxqpVxlRMxjVqw==",
+        "ratio": "0.34",
+        "name": "árpa"
+      }
+    ],
+    "isCan": true
+  },
+  {
+    "type": "Barna",
+    "name": "Arany Fácán Barna",
+    "id": "reCD63JnijspU9vR7mMZlTnLAXiy4gFa8LPkYuvBk1_svJWIEAXNzYReJggDP0uL17LfbmHitlZZwJPai-QO4g==",
+    "brand": "Arany Fácán",
+    "price": "1619",
+    "alcohol": "0.10",
+    "ingredients": [
+      {
+        "id": "_cRUSt7VlEGfblVlUmBoMfym708fQxUl2ml4x4Y9cKgoL08XeEKwZXF8ieKk6oaLUfrVcjR5sS1UCBvjiHiMUQ==",
+        "ratio": "0.07",
+        "name": "só"
+      },
+      {
+        "id": "1c8WuPwAeoJXhLBpGL4rDva02CyNMEF63X0g1mMqNT_UPk1xJL1o227LYQn3oTT6S5PxCVycZWUvazfDkiV3FQ==",
+        "ratio": "0.13",
+        "name": "cukor"
+      },
+      {
+        "id": "mfkP0DANOCiYqpYEuv2552vnVhUq8Vl8w1rX1tw4ShnpDc_zmNkSnMM93mOhgbgwee0mRU_sH0cY_zkRWQqsDA==",
+        "ratio": "0.30",
+        "name": "árpa"
+      }
+    ],
+    "isCan": false
+  },
+  {
+    "type": "Szűretlen",
+    "name": "Arany Fácán Szűretlen",
+    "id": "WLVsyY9f-IYp1CYJdtRJx_f_ynC-FwVuGvrcG63orvUgxErwhWctlWN5FsIr8M_fZWJB5sOru_i7UEgjIUpzYA==",
+    "brand": "Arany Fácán",
+    "price": "3226",
+    "alcohol": "0.05",
+    "ingredients": [
+      {
+        "id": "1QzkiAEqDO8y1xW9RI0ucD587UBDPBe0ZOlECI7uUZ17T-IPfmD3yhWVqMrQiyG-P4gJGh_Oa5QpR-4YFWh21g==",
+        "ratio": "0.28",
+        "name": "só"
+      },
+      {
+        "id": "ePSDYMeypgsMQdm2yhOpoY1fhOIdyrMvM9ocURw228E05no0IOZYOU3WRZ69wBqwSCbksNEz5j2FY0i16WRrgw==",
+        "ratio": "0.14",
+        "name": "cukor"
+      },
+      {
+        "id": "z8ygljdKJ1PXSY4lJA_HGy-1t6NBMQNgMYk4GZgRsZXxq_AjRPQx-4_Uw5pZEAjviNEneOnQjECrxUZYaRc5hA==",
+        "ratio": "0.09",
+        "name": "árpa"
+      }
+    ],
+    "isCan": false
+  },
+  {
+    "type": "Világos",
+    "name": "Arany Ászok Világos",
+    "id": "FV1Mg-OthYhTMHpwp1fDGBJ5OZ6TI3WPhXK05LeZvSTb33sUQknps_YXarWmIzaeb8zH41vZPrlbUeilz1RwvQ==",
+    "brand": "Arany Ászok",
+    "price": "2627",
+    "alcohol": "0.06",
+    "ingredients": [
+      {
+        "id": "5GqCv2_Fx2bilriiVJgm4QyPBBHIUfh0LGGBBX65OURCmyFNcyLXVCNN5z29iomHjbBYj9v_ck8_qS4VGG7a7A==",
+        "ratio": "0.06",
+        "name": "só"
+      },
+      {
+        "id": "Y1n8nAvE2XRPtdk_dMnSt-XZmY-x9lbOXlVs6Wu8mGWZswo4i6lic3xD8PLL-2Oje-kLheZ7vNTtE2PFIku0SQ==",
+        "ratio": "0.26",
+        "name": "cukor"
+      },
+      {
+        "id": "E-z-2ee5yhkTTt_a0pH1hkjnhHvJPrRtdwxGS3VE5lNhg6Y6kgdYzMgQ1ylFFFT-8htZA4vWjp98v6YFDvTJ_w==",
+        "ratio": "0.18",
+        "name": "árpa"
+      }
+    ],
+    "isCan": true
+  },
+  {
+    "type": "Búza",
+    "name": "Balatoni Világos Búza",
+    "id": "3yKtfPSUm50IMGXUkHRRP8Ktk4DVD3c-9TyTUA3Onx9CSNigFQJF8bSao6Kd23EKs7JaorwH9rG6pwBk-rZEng==",
+    "brand": "Balatoni Világos",
+    "price": "1364",
+    "alcohol": "0.06",
+    "ingredients": [
+      {
+        "id": "KSm5g9XkEjfgXaSwYECY1PwfuF2Ez0YEFvFBGkfxAhDeBoQg-PGVpaWkw27tqIhR3r-GRCbSOc1vGtEYm9aNag==",
+        "ratio": "0.18",
+        "name": "só"
+      },
+      {
+        "id": "94kFaXVq-47vEJYhNr6tbYAR8jBPZQcvQVLXLo4kMIrWwInU9YmQGWap8K1oAhYDFUHGtt7OEcjwnvcRkc1rnA==",
+        "ratio": "0.31",
+        "name": "cukor"
+      },
+      {
+        "id": "EHagAcn39OGXLSGMgCB6-ZQyy6kGAvBPlDDIU8RcEq27ofIJvN0alDgBK26StNTMoThu82CSJ-7TzGJ7iiH6dg==",
+        "ratio": "0.02",
+        "name": "árpa"
+      }
+    ],
+    "isCan": false
+  },
+  {
+    "type": "Szűretlen",
+    "name": "Dreher Szűretlen",
+    "id": "s-JL_3xzxM2K1VgDNkej_ecolaAA5ChvcqTEgP09WEXdZq0_O_q_E_JE-WlhaHxwxh3ty5E2TQwsjozzHOwBMg==",
+    "brand": "Dreher",
+    "price": "1250",
+    "alcohol": "0.04",
+    "ingredients": [
+      {
+        "id": "QqYC7m5UOLEo6jw4GVCS9KCrTOXnsv5kVFscuYVgoUsb2Ho1OqAzCRHN1RfCIVJj0qZSvtwMNVNQIABJQ-hemw==",
+        "ratio": "0.15",
+        "name": "só"
+      },
+      {
+        "id": "2Kz-Phf5IKhGNjSVXpaKTKzBKw7b1LNW0WXLaP9ImdUNIN7GEhkQlxO1NYdNdXnSJHjruqj054_yolzJGM8ZSQ==",
+        "ratio": "0.00",
+        "name": "cukor"
+      },
+      {
+        "id": "Epi698NvgpOrmzEs_sjy54NfxrVZTi_Yfpgz4OZ28q9Tg8TlMeWMHKIZcGBw86BhYd1WKp6VHjTnROwwMlDQ3Q==",
+        "ratio": "0.35",
+        "name": "árpa"
+      }
+    ],
+    "isCan": false
+  },
+  {
+    "type": "Világos",
+    "name": "Kőbányai Világos",
+    "id": "fd-QDMoGhbc_HKewAHjD3oeau99TpmM_DLBNdZVs5i5OnxWdXekkcFIiLRjXdjVWppXTRMNcX_-23CURRKvCdQ==",
+    "brand": "Kőbányai",
+    "price": "2210",
+    "alcohol": "0.06",
+    "ingredients": [
+      {
+        "id": "W2SEyyMrvF4GTghrvPfC1uLuyPhxHYLnjgGguAZ6K5YZNexdsjBkgjWc0TER7dRprxR-5XjSteQ9ePBiwCeKDw==",
+        "ratio": "0.20",
+        "name": "só"
+      },
+      {
+        "id": "56q6VkaEw4t2KHy83xDDrQ5cVqD9LEZXjBsEkVJiPMjuRuhbZRQ5z8SelPauXk6l43VeAvi2PX7jRNvGzQu1bA==",
+        "ratio": "0.16",
+        "name": "cukor"
+      },
+      {
+        "id": "WPsdu99Dwhs_83U6SD75vY018XjGeWMOejQdZwD-ADjTgA4UQtNIqF11wwVI31IShsMk2c1kWMv2nO880z0uFw==",
+        "ratio": "0.14",
+        "name": "árpa"
+      }
+    ],
+    "isCan": false
+  },
+  {
+    "type": "Szűrt",
+    "name": "Dreher Szűrt",
+    "id": "fwDukT3WOSaRRhPMaDMyGqo_RqzyRUu1o2TbA9zoTByvHKJPrbBEaz_0qn8NtwQUB0NKgeYkiXW6iehL1XS8Kw==",
+    "brand": "Dreher",
+    "price": "2830",
+    "alcohol": "0.07",
+    "ingredients": [
+      {
+        "id": "MtZGvKNGtoJeys8asSWTozeO_NJ8mRL6L17cFICUthdoS_2aEoBtV3vPMQbRgk5JwAR37iMf4AnWI09cxk4lJQ==",
+        "ratio": "0.19",
+        "name": "só"
+      },
+      {
+        "id": "StP0AUAbV3G8-Yt-srwiYZjcYm6zJmrr1TLrlpa4pHS6lvMMyKtC8jpW5Gx8WfdyTLzC1TZApLFTxbnSVE0uJQ==",
+        "ratio": "0.19",
+        "name": "cukor"
+      },
+      {
+        "id": "2Vt3IKRMDlRMh8C3Z1-JhU1pPgQ77kFd87T37n2g0IjaERcYoYa5GcBhA71dtMSOAVhr29Dhx7b9GCOyLRhdWw==",
+        "ratio": "0.12",
+        "name": "árpa"
+      }
+    ],
+    "isCan": false
+  },
+  {
+    "type": "Barna",
+    "name": "Balatoni Világos Barna",
+    "id": "HHQN8XXoVHFbLk3tKRTEoOeiyrhLStRazzfvhP3ApMZEgW5GysVe9EtWvAFNFYshZdaiIZSYOd4vZYl9gKjjJA==",
+    "brand": "Balatoni Világos",
+    "price": "161",
+    "alcohol": "0.05",
+    "ingredients": [
+      {
+        "id": "vcxIaSqdTn_TZYK26MIEW-7l4mJIgCI1NjfNpmG3uSsd0kslY2ZS30Yc9-PsN7vU7qsKgDI70-9x1hxF2oQ7mg==",
+        "ratio": "0.13",
+        "name": "só"
+      },
+      {
+        "id": "a123krxTYuLXGlY77iGdZVUQwBUueiBtX76026gu6rHn7-TXbAp5GLlji4Ck4nqlbETyf1iJ-9bABQ_o9_GgzQ==",
+        "ratio": "0.17",
+        "name": "cukor"
+      },
+      {
+        "id": "HrEAdm0i4oxWiy5tE3Mu663WfVgAPMid57GwUK1wsVB4d_helr0Phd1LLupOuUi3ACwWrnkuQ5yBAXBUzvKRUw==",
+        "ratio": "0.20",
+        "name": "árpa"
+      }
+    ],
+    "isCan": false
+  },
+  {
+    "type": "Búza",
+    "name": "Kőbányai Búza",
+    "id": "0KGwlqHBjAM3DaSorL3wUUS5M1V13cCUG38kT9xCMKvTFPnReSt8CBUL_FIfj6JNmL90CQZdaABxUCAR2v-cIA==",
+    "brand": "Kőbányai",
+    "price": "18",
+    "alcohol": "0.09",
+    "ingredients": [
+      {
+        "id": "h8HpXC2TIGSNAKU332vPVSGVYhAmVNbbAEYRv5mf40ZNPSufxg-0hgOTp8VGUSr-x_TN76jThXVnHpV5Rq4pIQ==",
+        "ratio": "0.06",
+        "name": "só"
+      },
+      {
+        "id": "2NXwTBp4UrpqUnIKRQdqBqKs0z8ILbhcCagciCbWGy8pvuYH_yOFzmRs5TI0HkyFgYYpAX9IhOUI7BDtpg0lNw==",
+        "ratio": "0.07",
+        "name": "cukor"
+      },
+      {
+        "id": "kafQ5jPWX1jY2d8b8uw03kSJmRxViAV5VacX5h09R2Gwdkm-E0pVJoxf3IkAbkaDHbfn6eGw3pugvoIA4kObbA==",
+        "ratio": "0.37",
+        "name": "árpa"
+      }
+    ],
+    "isCan": true
+  },
+  {
+    "type": "Búza",
+    "name": "Arany Ászok Búza",
+    "id": "PAKaJ0ZHGGQE1oMGn19H1yxo7z34nrt-B2IhEX0g92JWfAwUj4K7J45OOkS9FQoCMMnDk9uogUkbqXaWMQ9C2g==",
+    "brand": "Arany Ászok",
+    "price": "1303",
+    "alcohol": "0.07",
+    "ingredients": [
+      {
+        "id": "LTadpYTo7Jt6A0VOqY6Ux69oBkVFLwxL6w_9dSS0nHmLiIipxkXKsztToIldab97tJoH9ETuCF6i_NgUbG1vXQ==",
+        "ratio": "0.17",
+        "name": "só"
+      },
+      {
+        "id": "UTYrd-NXtVt-SKSxSsDO6XCNcDOlvyehdcwyUevPaOlwYx2TE5ffckkP1CEkRFMp52EhgcAtSgjTmw3nOUn7Lw==",
+        "ratio": "0.23",
+        "name": "cukor"
+      },
+      {
+        "id": "wM1YQkn1rd5G0A6UyJuVteYy5nI7HmAutkKHFpBsjRgodFrqGQFr7qak3CfbMw2cjrBwr0l0VTPitRNfyQ4B0g==",
+        "ratio": "0.10",
+        "name": "árpa"
+      }
+    ],
+    "isCan": true
+  },
+  {
+    "type": "Világos",
+    "name": "Dreher Világos",
+    "id": "_QAkKATjOspMR9TzPDw1HSvD5MogOlJWHTSHu4M5qKuFKBUYFg0fmUKewlKVpRKkdBolmVMXE8R7WgvzvaEdzQ==",
+    "brand": "Dreher",
+    "price": "1158",
+    "alcohol": "0.04",
+    "ingredients": [
+      {
+        "id": "OAjjBCp59Plc8Y2k2uu45UdZYH9zN03MT3CQPhUCSy-sXklnygwP_nthhJJ8vI8ygN4tMGKtfTeLk2sXlRM1Ug==",
+        "ratio": "0.18",
+        "name": "só"
+      },
+      {
+        "id": "0acVbK1a_Gl_kY17fkzZqrIDH43Trq9oKfTUzr1NR9Aj29a-kMJrqBkcMy858T1Pb8zKef0L0OlBr6jXX0XElw==",
+        "ratio": "0.21",
+        "name": "cukor"
+      },
+      {
+        "id": "dqdy1E9NFkE3Ip350Ezyg36KFTBXOSDA3AqtzwZ5o1fsc6AM0aThAFpESMmm0VvAiVEBbEiB6UxjSJrTmLJo6Q==",
+        "ratio": "0.11",
+        "name": "árpa"
+      }
+    ],
+    "isCan": false
+  },
+  {
+    "type": "Szűrt",
+    "name": "Kőbányai Szűrt",
+    "id": "1YSlr2O7QbPNC2uWRYaFscIjZczWwEY5WL8U915yQQlkbIbcFWa4f_McHH59h9BhTDbGenqNDn6FmZ8ekvjgsw==",
+    "brand": "Kőbányai",
+    "price": "3878",
+    "alcohol": "0.07",
+    "ingredients": [
+      {
+        "id": "_wlNVME-gZFqjvr5HEFO53TWQ2BM405diZmqQQXOkemlzwuzwSrQnHKtGGI0ZtTZkJ4zyZLb562iKJk6wILEOg==",
+        "ratio": "0.15",
+        "name": "só"
+      },
+      {
+        "id": "wgENwC81o6crsBYrPo3G1XcwJUNUBViBQPDyIDbqmYRTc7DghvXjf9EpPz6SxthDQqgZv50sC7ARIFgMgiZvmQ==",
+        "ratio": "0.22",
+        "name": "cukor"
+      },
+      {
+        "id": "eQOe4YXuE6OSuUBTJaNs5340bzeTWStsF4fnGohqJ1v9mvCkC0d12mWjaF5XgWA_1QlYYC0srxm3ciQmJrKj0Q==",
+        "ratio": "0.13",
+        "name": "árpa"
+      }
+    ],
+    "isCan": true
+  },
+  {
+    "type": "Szűretlen",
+    "name": "Arany Ászok Szűretlen",
+    "id": "pMGBT0w2neMDa6fDq4TzLMEbVJeWRpKRQPDC7bCtCGb4PwmS6A-4Vha2bVEXrekgL3jD0RdBKH-iD6aurcaLHA==",
+    "brand": "Arany Ászok",
+    "price": "8274",
+    "alcohol": "0.03",
+    "ingredients": [
+      {
+        "id": "1Rd0AEDMkoL8X5nxnGPXLBnSvH8Ms2K0MYzovD3P429O5YveI8rVSAmSbGUFIKcT3Dr4VcFuWyiU6l4wsRq8ew==",
+        "ratio": "0.22",
+        "name": "só"
+      },
+      {
+        "id": "1h36yVzjTJ-qlAdhcxSK-WDE1rjPemnGZvbxidLGeg4GqbLEFB2JLOt-ToEoCAsbjjW1GTQAiRIhCETV1IPskw==",
+        "ratio": "0.15",
+        "name": "cukor"
+      },
+      {
+        "id": "w3K7Ou9kU51S0eRKQPuuWL5UYnRzjWbpC_eoFcyeUlGILBAx6z4MTmVOHRheAeQt9Zrhqeozr5X6sR5cAn3BLg==",
+        "ratio": "0.12",
+        "name": "árpa"
+      }
+    ],
+    "isCan": true
+  },
+  {
+    "type": "Szűrt",
+    "name": "Kőbányai Szűrt",
+    "id": "-eFvv5L8fRMarUPw9ggDEd8Sv41Ta732FB86Wdtg8qP5UyaNNLdwsBcCj5s2an4wQiBruLy15BAnTwcu1J3Vuw==",
+    "brand": "Kőbányai",
+    "price": "1436",
+    "alcohol": "0.08",
+    "ingredients": [
+      {
+        "id": "zz7WPeSfL4v5wLaL4mlZKXo3A2jH1rrVTwnv39ohIGEGVMvUeCLTxjYUWYS0qYobTrDdaJx6-_-GuszHn0j00g==",
+        "ratio": "0.05",
+        "name": "só"
+      },
+      {
+        "id": "GDgXGs9EwR8SzwOmYH1MTm26RV_PMYUbWRfMh2u1d_wyk8Q5MyPWKGpemyPzBKyuaG2CMafwEsOTNsjH2MtUbw==",
+        "ratio": "0.26",
+        "name": "cukor"
+      },
+      {
+        "id": "pAChmYvbX5uG5pP0E-dykfy-uUf9bq1xgBaKpyd8qhki8V-wYz8YvMWqfUQN0c997YvmQg-d6hxcd-aQghrvuw==",
+        "ratio": "0.19",
+        "name": "árpa"
+      }
+    ],
+    "isCan": true
+  },
+  {
+    "type": "Szűrt",
+    "name": "Arany Ászok Szűrt",
+    "id": "a6SjfeN-vYOqYd-sGZgQ1E-ljFYxqt3WFJnYyfkBx3QVYzi4nMe_SNVz8afjW5ExyAaKUSbfGAXoqYT-QoRXdQ==",
+    "brand": "Arany Ászok",
+    "price": "3519",
+    "alcohol": "0.10",
+    "ingredients": [
+      {
+        "id": "8ssQz0zMJI_lacydp9QFJ5hC2DhnXnw0gTuO2NcnbQUELENXUva0sXiiJv_G5bXF9tIdFe-Gr9tTkex8UazV6Q==",
+        "ratio": "0.04",
+        "name": "só"
+      },
+      {
+        "id": "snkZeJvxZ8SuNjTEL-DiWYztzPQ_QL7HklSh1KMDak5SHvLwqJHmwriy-mDlktAoQsu-rGYyB8_mXaqjMli8fA==",
+        "ratio": "0.23",
+        "name": "cukor"
+      },
+      {
+        "id": "V3avmdP8Yg8Yo68vJkw9qWOCFh4ku51wuWn0mhTEZolDED48P2or49z6aTDOwWTqabLGA6OT5XtC-MBSXZXLjQ==",
+        "ratio": "0.23",
+        "name": "árpa"
+      }
+    ],
+    "isCan": false
+  },
+  {
+    "type": "Világos",
+    "name": "Arany Fácán Világos",
+    "id": "-ZZW00MJ6oCjWdrgpCrn92hIayw1__8TngoaGbOcL8dvwKS4lTb3fyFx3gTdzESL2XKcmbXiEfxjs9XF5xQ4sg==",
+    "brand": "Arany Fácán",
+    "price": "7346",
+    "alcohol": "0.13",
+    "ingredients": [
+      {
+        "id": "Z-an_JPKpF7beR7mttO1MoV5CyFgD_wZ9ZjtEMPbspSX3WP3txQYNsYuu6BWR_Tg3a0ujv6SYph_QVvEircidA==",
+        "ratio": "0.07",
+        "name": "só"
+      },
+      {
+        "id": "fCkbMQGfJJzCC0ZnZODTWMfxm3RAwN-1No07YpcmvBjAoVlc5NMADmAUDo6uqeKViMvydI_LMB8lj1KF0uSkmA==",
+        "ratio": "0.20",
+        "name": "cukor"
+      },
+      {
+        "id": "tlX2Z8OM787Mir_kJa4bUgYeGdFfePvCZPqpLnv4ICxNq_HxrS27vVaDa-Eddj7jRfVimA86zihDRYVJDb2qag==",
+        "ratio": "0.24",
+        "name": "árpa"
+      }
+    ],
+    "isCan": false
+  },
+  {
+    "type": "Búza",
+    "name": "Dreher Búza",
+    "id": "Y_ZgU1RUEzeOV2uMQ6-4XOQau8NOQcTVITghJO3Drp5UcnvBWvkY3D8CPRSpZcuCEwmaZH5algishC0qNWsBCA==",
+    "brand": "Dreher",
+    "price": "706",
+    "alcohol": "0.12",
+    "ingredients": [
+      {
+        "id": "LQ36lV5wxRqruUh_oERVZu378ZnJl57LoxrAkb-FfdPPMvIkQXjROdOKsw9QVsDDDH2T4TZhatFrK0KiB5i99g==",
+        "ratio": "0.02",
+        "name": "só"
+      },
+      {
+        "id": "P_1epJTYEnLH4hY6JauRwxEA3WrsrB_E2y4_1f-P6oElsvjU-pGej8gwuozwTomnyTVe008WlG7VVucNNKaL8g==",
+        "ratio": "0.33",
+        "name": "cukor"
+      },
+      {
+        "id": "vwxqD1lZbXc91Zc6SXetpHuGfrQ6v9pvVUlSbMMOKSYDNHxZz3EJ1W-0ymRJFFQzhuN44Vpm3dnUdD2oo7JAfA==",
+        "ratio": "0.16",
+        "name": "árpa"
+      }
+    ],
+    "isCan": false
+  },
+  {
+    "type": "Barna",
+    "name": "Dreher Barna",
+    "id": "d3L9YpcnxzIm-p5Ef5f3siQLaAIvu8B16UHhTNp0_LEd4kkVk4z--_RVveVG4bT2UpQk-1ouDJEhbsmHFIT7QA==",
+    "brand": "Dreher",
+    "price": "992",
+    "alcohol": "0.05",
+    "ingredients": [
+      {
+        "id": "ykb5pZ2PQBg-x6FNTHMljlElnjjVTw_hW5gOUreXPW5HCCxES-sNMagQTUBKNrSDoKsmI12RHLprIVA_OPLCKQ==",
+        "ratio": "0.11",
+        "name": "só"
+      },
+      {
+        "id": "SLTr9dmHL6P-ikmH0lP2OJHD-xivLX6F78OrPaHiNp5R7gBD_ZYjof8AX8ed8HLuVqZDsejGzZInL-Weoxh69g==",
+        "ratio": "0.15",
+        "name": "cukor"
+      },
+      {
+        "id": "ePZrxbDsoaNszT0oGPjJE6A3ESBXtBsolLbPLMmeCRltbgeIiAem2t2KDMoZC7HiYYBj9clmSIpFhV12sMmEvw==",
+        "ratio": "0.24",
+        "name": "árpa"
+      }
+    ],
+    "isCan": true
+  },
+  {
+    "type": "Szűrt",
+    "name": "Balatoni Világos Szűrt",
+    "id": "f0tZZYNyR2q6aeWqZJt6k9F2f13waR_Xrf5U8oho5ioSy6KW7fMLqwvgwJGGLcA45I4bPnzJxP57TEeag6ODbg==",
+    "brand": "Balatoni Világos",
+    "price": "2799",
+    "alcohol": "0.09",
+    "ingredients": [
+      {
+        "id": "alh_7Q2xBfGjM9S8YCu-hDXlP0YrG3f3wsV_7ESZzMS8zX_N2MlvRtmRXvVy4f4LNTCWFUD7OM8bW5VHdHLN6Q==",
+        "ratio": "0.16",
+        "name": "só"
+      },
+      {
+        "id": "iGYAlm7EaEcFCNSmyQwi8GhwcAO1w-yKpFG75A3XuASgWJ0lA8rJvTVBs_BIV4V4fH8YxYoBwygeTs-GiDG43w==",
+        "ratio": "0.22",
+        "name": "cukor"
+      },
+      {
+        "id": "r2fDe0V3rHwkrOJ7LrMPYDYkf_QOk4AWlvM7PRzmgyVzClcFsV6MuA16MGAjoPQh2_1puiMeEsWmnxWpGIQr0g==",
+        "ratio": "0.12",
+        "name": "árpa"
+      }
+    ],
+    "isCan": false
+  },
+  {
+    "type": "Szűretlen",
+    "name": "Balatoni Világos Szűretlen",
+    "id": "NEAnrAQcPd4NhvyA3hNQV5KpQjW5uQrNOtjQ9DS1XDBp0-ldC23xtTqQ0OaGNbQPLGg2rJWC-AtlZgJAHX_Nfg==",
+    "brand": "Balatoni Világos",
+    "price": "2014",
+    "alcohol": "0.09",
+    "ingredients": [
+      {
+        "id": "yZBEgiaPmlW6aqTVErfAQYeJtnUIFyVV_j5DGGluNPx6FVyQUBKVnheem9vtsubxBahp4GUX15Dt309GjFNAJQ==",
+        "ratio": "0.09",
+        "name": "só"
+      },
+      {
+        "id": "oDv5RG0afiO6ztkoarSkxA6vWnNEDB_zYrBi5DU_3eh9iyqKgv6-eOFiXdRjHNT8b70xjQlciA2us1C5t8n6Rg==",
+        "ratio": "0.21",
+        "name": "cukor"
+      },
+      {
+        "id": "YweXEFDIdKrJDyt96JntcZIQ2hEhwAW3g-1wvpF-PPij3avLUxdj36sJjr8PTsahXmmHErAuH58Sla2lPAo6ZA==",
+        "ratio": "0.20",
+        "name": "árpa"
+      }
+    ],
+    "isCan": false
+  },
+  {
+    "type": "Szűretlen",
+    "name": "Kőbányai Szűretlen",
+    "id": "T5-7V4xOqBJfs0nwMt6qPK6Xd32QvCFrdsbYX13iVQiqBWoWm6hzJqTvoXzZGOjIEXGjNb2wCL1P1akOEbCGCA==",
+    "brand": "Kőbányai",
+    "price": "2352",
+    "alcohol": "0.04",
+    "ingredients": [
+      {
+        "id": "NLMi6z18PioMk1Lrjhtl69Y-X92gL2dBspj73pZebmBb1ap1PDs5nQVqiDyCbX0SQVfil-9rIc5mNNMu1R7ONA==",
+        "ratio": "0.13",
+        "name": "só"
+      },
+      {
+        "id": "s5v9XYIwB0amMop482DChKL5YvEYYG2djgcBQrbUoT9NWe5dFxZiWGKo1NEqNigU0timxr2BsA3o0AZRIztaMQ==",
+        "ratio": "0.34",
+        "name": "cukor"
+      },
+      {
+        "id": "QZdRBvN3eZlj2cm-ug9I6LqroRHLIinOiGewjdezu0kv23XkQCQd9ijjoJNoewnKTnCpPJ0OuQYxsOxv9TtXGQ==",
+        "ratio": "0.03",
+        "name": "árpa"
+      }
+    ],
+    "isCan": true
+  },
+  {
+    "type": "Barna",
+    "name": "Kőbányai Barna",
+    "id": "WRdkKBQ3Yc8HIlWLa5scZ0WkACgduBYlk6n9obOFut0V_2YZPHySER8gu9hteUSZOpt1vy0bPj9tWQFI5KfPaQ==",
+    "brand": "Kőbányai",
+    "price": "8688",
+    "alcohol": "0.05",
+    "ingredients": [
+      {
+        "id": "V_yENubeyPxUbuoWNAd8-tlhqCbID9-aZcNtowrIHki3HkAo68H3ch6_MMVpNWrA4WnHNy1r897zPbaKXMlPXQ==",
+        "ratio": "0.16",
+        "name": "só"
+      },
+      {
+        "id": "9hThPd_ezqxNvHilzwRwoSnIGZXwLsZJqFlCX0vlO2EHLm46CyWXV11CvRUleAiA5uqtvIGJtJRrLekzbpKzsg==",
+        "ratio": "0.18",
+        "name": "cukor"
+      },
+      {
+        "id": "z8ds5HBNNspN5wop4ZoP5zm_cEMCD6dGVn93xau2j-ukASgADMgpbw9c2c20-B4uTir16M04BmyL9HbtyNlnbQ==",
+        "ratio": "0.16",
+        "name": "árpa"
+      }
+    ],
+    "isCan": true
+  },
+  {
+    "type": "Szűretlen",
+    "name": "Kőbányai Szűretlen",
+    "id": "CUpar7dfcQ7Rpu4glyTT72afxKPGjyL58xtOa8lBonpbyClRFl3NlH6Al0Ky1u-b2oWbYkwnMQcjPHprRsFASw==",
+    "brand": "Kőbányai",
+    "price": "3114",
+    "alcohol": "0.10",
+    "ingredients": [
+      {
+        "id": "Fn6Xz96uJ7HUPa_BdsodGf6rLd1Gz0Y5yv_0li3T6_hYjYeEuQgHMyRc9UFHeIJO2Etb5wRW9mcmMqqWyIY8Og==",
+        "ratio": "0.21",
+        "name": "só"
+      },
+      {
+        "id": "uHq1-nnQVsH3SJhqgJ4nNLubKFwJecfcAeUyWdzPLevLAtaL_ydvw6u35FcTLg3XKpB_8xkp7yTLcy7aID2yYQ==",
+        "ratio": "0.18",
+        "name": "cukor"
+      },
+      {
+        "id": "OZ--vzxW2imoC_SJqtsiXm2p-74GkS9IYWffcHO6fAGgz7c4Os9SAutbtNgd4omnOKadffXVPhAro8-J-am9cA==",
+        "ratio": "0.11",
+        "name": "árpa"
+      }
+    ],
+    "isCan": true
+  },
+  {
+    "type": "Világos",
+    "name": "Balatoni Világos Világos",
+    "id": "pyIwVK81L7O8Uo0f5_3TYRyo6xgtepeZIiu67Xi3rqU3BBaAEb2lbE1fmo9Wk7KlZOVlryogXs_BR7GaQiJ3Ig==",
+    "brand": "Balatoni Világos",
+    "price": "163",
+    "alcohol": "0.14",
+    "ingredients": [
+      {
+        "id": "mP3EfpFk9xOZAEzC385fj2jSm9xV1M4QJkDe8U6zSTdDBgJ2a7DGRwSiql3vDfgdUbpOS7qBJepEtk8QmQcMkQ==",
+        "ratio": "0.11",
+        "name": "só"
+      },
+      {
+        "id": "cwmwALHtenaV876xu_tE_AoH9PczS6JvpGbnhDf5sZ5NjDEZeuC2UhwC58oGYMtwzq4tqeMG4k-0YNI2_pehSQ==",
+        "ratio": "0.27",
+        "name": "cukor"
+      },
+      {
+        "id": "yBJgUEWUC7b5O7Q02Ib11JfgR9Igku3YvVkG2QGN83EgeBjbTqUq_aXH4txY4wJ7edS6GBcHKXKMWQneolO7HQ==",
+        "ratio": "0.12",
+        "name": "árpa"
+      }
+    ],
+    "isCan": false
+  }
+]
