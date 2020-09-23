@@ -159,6 +159,51 @@ public class Main {
             return tolerantBeers;
         }
 
+        /**
+         * Function should return all beers sorted descending by their water ingredient ratio.
+         * The remaining part of the ingredients is the water
+         * @return [ { water: 0.5, beers: [ {}, {}... ] }, { water: 0.2, beers: [] }, ...]
+         */
+        public JsonArray getBeersByWater() {
+            JsonArray beerIngredients;
+            Double otherRatio;
+            Double waterRatio;
+            TreeMap <Double, JsonArray> tmpBeersByWater = new TreeMap<>(Collections.reverseOrder());
+
+            for (JsonElement beer : beers) {
+                beerIngredients = beer.getAsJsonObject().get("ingredients").getAsJsonArray();
+                otherRatio = 0.0;
+
+                for (int i=0; i < beerIngredients.size(); i++) {
+                    otherRatio += beerIngredients.get(i).getAsJsonObject().get("ratio").getAsDouble();
+                }
+
+                waterRatio = 1 - otherRatio;
+
+                if (tmpBeersByWater.containsKey(waterRatio)){
+                    JsonArray beersArray = tmpBeersByWater.get(waterRatio);
+                    beersArray.add(beer);
+                    tmpBeersByWater.put(waterRatio, beersArray);
+                } else {
+                    JsonArray beersArray = new JsonArray();
+                    beersArray.add(beer);
+                    tmpBeersByWater.put(waterRatio, beersArray);
+                }
+            }
+
+            String waterJson;
+            JsonObject waterObject;
+            JsonArray waterBeersSorted = new JsonArray();
+
+            for (Map.Entry<Double, JsonArray> waterBeers : tmpBeersByWater.entrySet()){
+                waterJson =  "{\"water\": " + waterBeers.getKey() +",\"beers\": " + waterBeers.getValue() + "}";
+                waterObject = new JsonParser().parse(waterJson).getAsJsonObject();
+                waterBeersSorted.add(waterObject);
+            }
+
+            return waterBeersSorted;
+        }
+
         public String toString(Object object) {
 
             return gson.toJson(object);
@@ -184,6 +229,7 @@ public class Main {
                           "3: Get beers by a given type \n" +
                           "4: Get the cheapest brand \n" +
                           "5: Get beers which does not contains a given ingredient \n" +
+                          "6: Get beers with water ingredient ratio and sort by ratio \n" +
                           "-1: Close this application";
             System.out.println(menu);
             System.out.println("Type the option's number: ");
@@ -233,6 +279,11 @@ public class Main {
                         String ingredientname = sc3.nextLine();
                         System.out.println("Beers that lack the " + ingredientname + " : \n" +
                                            beerSelect.toString( beerSelect.tolerantBeers(ingredientname) ) );
+                        System.out.println(menu);
+                        break;
+                    case "6":
+                        System.out.println("Get beers with water ingredient ratio and sort by ratio");
+                        System.out.println("Beers: \n" + beerSelect.toString( beerSelect.getBeersByWater() ) );
                         System.out.println(menu);
                         break;
                     default:
