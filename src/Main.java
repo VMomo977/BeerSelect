@@ -118,6 +118,47 @@ public class Main {
             return minPriceBrandName;
         }
 
+        public Set <String> getIngredientNames() {
+            Set<String> ingredientsNames = new HashSet<>();
+            String ingredientName = "";
+            JsonArray ingredients;
+            for(JsonElement beer : beers) {
+                ingredients = beer.getAsJsonObject().get("ingredients").getAsJsonArray();
+                for (JsonElement ingredient : ingredients){
+                    ingredientName = ingredient.getAsJsonObject().get("name").getAsString();
+                    ingredientsNames.add( ingredientName );
+                }
+            }
+            return ingredientsNames;
+        }
+
+        /**
+         *  a Function that takes an ingredient name and
+         *  returns an array of beers that lack this ingredient.
+         * @param ingredientName
+         * @return [ {}, {},...]
+         */
+        public JsonArray tolerantBeers (String ingredientName) {
+            JsonArray beerIngredients;
+            JsonArray tolerantBeers = new JsonArray();
+            boolean containIngredient = false;
+
+            for (JsonElement beer : beers){
+                beerIngredients = beer.getAsJsonObject().get("ingredients").getAsJsonArray();
+
+                for (int i=0; i < beerIngredients.size(); i++) {
+                    if (beerIngredients.get(i).getAsJsonObject().get("name").getAsString().equals(ingredientName)){
+                        containIngredient = true;
+                        break;
+                    }
+                }
+                if (!containIngredient){
+                    tolerantBeers.add(beer);
+                }
+            }
+            return tolerantBeers;
+        }
+
         public String toString(Object object) {
 
             return gson.toJson(object);
@@ -129,7 +170,6 @@ public class Main {
 
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
 
         JsonParser parser = new JsonParser();
         try {
@@ -143,6 +183,7 @@ public class Main {
                           "2: Get grouped beers by brand \n" +
                           "3: Get beers by a given type \n" +
                           "4: Get the cheapest brand \n" +
+                          "5: Get beers which does not contains a given ingredient \n" +
                           "-1: Close this application";
             System.out.println(menu);
             System.out.println("Type the option's number: ");
@@ -176,6 +217,22 @@ public class Main {
                     case "4":
                         System.out.println("Get the cheapest brand");
                         System.out.println("Cheapest brand name: " + beerSelect.getCheapestBrand() );
+                        System.out.println(menu);
+                        break;
+                    case "5":
+                        System.out.println("Get beers which does not contains a given ingredient");
+                        Set <String> ingredientsNames = beerSelect.getIngredientNames();
+                        System.out.println("You can choose between these ingredients' names by type theirs name \n " +
+                                          "(These ingredients can be found in one of our beers):");
+                        // All beers contain the same ingredients: só, cukor, árpa,... so this json file is not contains different ingredients' names
+                        for (String ingredientName : ingredientsNames){
+                            System.out.println(ingredientName);
+                        }
+                        System.out.println("Type the in ingredient's name: ");
+                        Scanner sc3 = new Scanner(System.in);
+                        String ingredientname = sc3.nextLine();
+                        System.out.println("Beers that lack the " + ingredientname + " : \n" +
+                                           beerSelect.toString( beerSelect.tolerantBeers(ingredientname) ) );
                         System.out.println(menu);
                         break;
                     default:
