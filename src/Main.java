@@ -1,6 +1,7 @@
 import com.google.gson.*;
 
 import java.io.FileReader;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
@@ -14,38 +15,30 @@ public class Main {
         }
 
         public String groupByBrand (JsonArray beers) {
-            JsonArray brandBeers = new JsonArray();
             String brand;
-            String brandJson;
-            JsonObject brandObject;
+            JsonObject tmpBrands = new JsonObject();
 
-            int brandIdx;
             for (JsonElement beer : beers){
                 brand = beer.getAsJsonObject().get("brand").toString();
-                brandJson = "{ \"brand\": " + brand+" }";
-                brandObject = new JsonParser().parse(brandJson).getAsJsonObject();
-                brandIdx = getBrandIdx(brandBeers, brand);
-
-                if (brandIdx != -1) {
-                    brandBeers.get(brandIdx).getAsJsonObject().get("beers").getAsJsonArray().add(beer);
+                if (tmpBrands.has(brand)){
+                    tmpBrands.get(brand).getAsJsonArray().add(beer);
                 } else {
-                    JsonArray brandArray = new JsonArray();
-                    brandArray.add( beer.getAsJsonObject() );
-                    brandBeers.add(brandObject);
-                    brandIdx = getBrandIdx(brandBeers, brand);
-                    brandBeers.get(brandIdx).getAsJsonObject().add("beers", brandArray);
+                    JsonArray beerArray = new JsonArray();
+                    beerArray.add(beer);
+                    tmpBrands.add(brand, beerArray);
                 }
+            }
+
+            String brandJson;
+            JsonObject brandObject;
+            JsonArray brandBeers = new JsonArray();
+
+            for (Map.Entry<String, JsonElement> b : tmpBrands.entrySet()){
+                brandJson =  "{\"brand\": " + b.getKey() +",\"beers\": " + b.getValue() + "}";
+                brandObject = new JsonParser().parse(brandJson).getAsJsonObject();
+                brandBeers.add(brandObject);
             }
             return toString(brandBeers);
-        }
-
-        public int getBrandIdx (JsonArray brandBeers, String brand){
-            for (int i=0; i < brandBeers.size(); i++){
-                if( brandBeers.get(i).getAsJsonObject().get("brand").toString().equals(brand)) {
-                    return i;
-                }
-            }
-            return -1;
         }
 
         public String toString(Object object) {
@@ -83,7 +76,7 @@ public class Main {
                         break;
                     case "2":
                         System.out.println("Get grouped beers by brand");
-                        System.out.println("Brand: " + beerSelect.groupByBrand(beers_));
+                        System.out.println("Brands: " + beerSelect.groupByBrand(beers_));
                         System.out.println(menu);
                         break;
                     default:
