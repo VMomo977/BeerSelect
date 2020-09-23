@@ -17,7 +17,7 @@ public class Main {
          * the Function should return an array of Brand objects which contain the array of Beers of that Brand
          * @return [ {brand: Dreher, beers: [ {},{}... ], brand: Balatoni Világos, beers: [...], ... } ]
          */
-        public String groupByBrand () {
+        public JsonArray groupByBrand () {
             String brand;
             JsonObject tmpBrands = new JsonObject();
 
@@ -41,7 +41,7 @@ public class Main {
                 brandObject = new JsonParser().parse(brandJson).getAsJsonObject();
                 brandBeers.add(brandObject);
             }
-            return toString(brandBeers);
+            return brandBeers;
         }
 
         public Set <String> getTypes() {
@@ -77,6 +77,47 @@ public class Main {
             return toString(typeBeers);
         }
 
+        /**
+         * a Function that returns the name of the brand that has the cheapest average price
+         * @return brandName
+         */
+        public String getCheapestBrand () {
+            JsonArray brands = groupByBrand();
+            JsonArray beersByBrand;
+            Double tmp_price;
+            Double priceSum = 0.0;
+            Double priceAvg;
+            JsonArray firstBrandBeers = brands.get(0).getAsJsonObject().get("beers").getAsJsonArray();
+
+            for ( JsonElement beer : firstBrandBeers) {
+                tmp_price = beer.getAsJsonObject().get("price").getAsDouble();
+                priceSum += tmp_price;
+            }
+
+            priceAvg = priceSum / firstBrandBeers.size();
+            Double minPriceBrand = priceAvg;
+            String minPriceBrandName = brands.get(0).getAsJsonObject().get("brand").getAsString();
+
+            for (int i=1; i < brands.size(); i++){
+                beersByBrand = brands.get(i).getAsJsonObject().get("beers").getAsJsonArray();
+                priceSum = 0.0;
+
+                for ( JsonElement beer : beersByBrand) {
+                    tmp_price = beer.getAsJsonObject().get("price").getAsDouble();
+                    priceSum += tmp_price;
+                }
+
+                priceAvg = priceSum / beersByBrand.size();
+
+                if (priceAvg < minPriceBrand) {
+                    minPriceBrand = priceAvg;
+                    minPriceBrandName = brands.get(i).getAsJsonObject().get("brand").getAsString();
+                }
+
+            }
+            return minPriceBrandName;
+        }
+
         public String toString(Object object) {
 
             return gson.toJson(object);
@@ -101,11 +142,13 @@ public class Main {
                           "1: Get beers \n" +
                           "2: Get grouped beers by brand \n" +
                           "3: Get beers by a given type \n" +
-                          "4: Close this application";
+                          "4: Get the cheapest brand \n" +
+                          "-1: Close this application";
             System.out.println(menu);
+            System.out.println("Type the option's number: ");
             Scanner sc = new Scanner(System.in);
             String userInput = sc.nextLine();
-            while (!userInput.equals("4")){
+            while (!userInput.equals("-1")){
                 switch (userInput){
                     case "1":
                         System.out.println("Get beers");
@@ -114,7 +157,7 @@ public class Main {
                         break;
                     case "2":
                         System.out.println("Get grouped beers by brand");
-                        System.out.println("Brands: \n" + beerSelect.groupByBrand());
+                        System.out.println("Brands: \n" + beerSelect.toString( beerSelect.groupByBrand() ));
                         System.out.println(menu);
                         break;
                     case "3":
@@ -128,6 +171,11 @@ public class Main {
                         Scanner sc2 = new Scanner(System.in);
                         String type = sc2.nextLine();
                         System.out.println("Beers by type: \n" + beerSelect.filterBrandsByType(type) );
+                        System.out.println(menu);
+                        break;
+                    case "4":
+                        System.out.println("Get the cheapest brand");
+                        System.out.println("Cheapest brand name: " + beerSelect.getCheapestBrand() );
                         System.out.println(menu);
                         break;
                     default:
