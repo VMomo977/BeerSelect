@@ -204,6 +204,46 @@ public class Main {
             return waterBeersSorted;
         }
 
+        public Double roundedUpBeforeDecimal(Double number, Double roundedUp){
+            return Math.ceil( number / roundedUp ) * roundedUp;
+        }
+
+        /**
+         * Function should return a map where the keys are the prices rounded to the nearest hundred.
+         * @return { “100”: [ { price: 1, ... }, { price: 100, ... }, ... ], “200”: [ { price: 101, ... }, { price: 200, ... }, ... ] }
+         */
+        public JsonObject getPricesRounded(){
+            Double price, roundedTo;
+            TreeMap <Double, JsonArray> beersByRoundedPrice = new TreeMap<>();
+
+            for (JsonElement beer : beers){
+                price = beer.getAsJsonObject().get("price").getAsDouble();
+                roundedTo = roundedUpBeforeDecimal(price, 100.0);
+
+                if (beersByRoundedPrice.containsKey(roundedTo)){
+                    JsonArray beersArray = beersByRoundedPrice.get(roundedTo);
+                    beersArray.add(beer);
+                    beersByRoundedPrice.put(roundedTo, beersArray);
+                } else {
+                    JsonArray beersArray = new JsonArray();
+                    beersArray.add(beer);
+                    beersByRoundedPrice.put(roundedTo, beersArray);
+                }
+
+            }
+
+            String priceJson = "{";
+            JsonObject priceObject = new JsonObject();
+
+            for (Map.Entry<Double, JsonArray> priceBeer : beersByRoundedPrice.entrySet()){
+                priceJson +=  priceBeer.getKey() +": " +  priceBeer.getValue() + ",";
+            }
+            priceJson = priceJson.substring(0, priceJson.length()-1) + "}";
+            priceObject = new JsonParser().parse(priceJson).getAsJsonObject();
+
+            return priceObject;
+        }
+
         public String toString(Object object) {
 
             return gson.toJson(object);
@@ -223,18 +263,21 @@ public class Main {
             JsonArray beers_ = (JsonArray) obj;
 
             BeerSelect beerSelect = new BeerSelect(beers_);
-            String menu = "You can choose between these options by enter one of their's number: \n" +
+            String menu = "\nYou can choose between these options by enter one of their's number: \n" +
                           "1: Get beers \n" +
                           "2: Get grouped beers by brand \n" +
                           "3: Get beers by a given type \n" +
                           "4: Get the cheapest brand \n" +
                           "5: Get beers which does not contains a given ingredient \n" +
                           "6: Get beers with water ingredient ratio and sort by ratio \n" +
-                          "-1: Close this application";
+                          "7: Get a map where the keys are the prices rounded to the nearest hundred. \n" +
+                          "   The values are the beers. \n" +
+                          "-1: Close this application \n\n" +
+                          "Type the option's number: ";
             System.out.println(menu);
-            System.out.println("Type the option's number: ");
             Scanner sc = new Scanner(System.in);
             String userInput = sc.nextLine();
+            System.out.println("");
             while (!userInput.equals("-1")){
                 switch (userInput){
                     case "1":
@@ -254,10 +297,10 @@ public class Main {
                         for (String type : types){
                             System.out.println(type);
                         }
-                        System.out.println("Type the beer type: ");
+                        System.out.println("\nType the beer type: ");
                         Scanner sc2 = new Scanner(System.in);
                         String type = sc2.nextLine();
-                        System.out.println("Beers by type: \n" + beerSelect.filterBrandsByType(type) );
+                        System.out.println("\nBeers by type: \n" + beerSelect.filterBrandsByType(type) );
                         System.out.println(menu);
                         break;
                     case "4":
@@ -274,16 +317,22 @@ public class Main {
                         for (String ingredientName : ingredientsNames){
                             System.out.println(ingredientName);
                         }
-                        System.out.println("Type the in ingredient's name: ");
+                        System.out.println("\nType the in ingredient's name: ");
                         Scanner sc3 = new Scanner(System.in);
                         String ingredientname = sc3.nextLine();
-                        System.out.println("Beers that lack the " + ingredientname + " : \n" +
+                        System.out.println("\nBeers that lack the " + ingredientname + " : \n" +
                                            beerSelect.toString( beerSelect.tolerantBeers(ingredientname) ) );
                         System.out.println(menu);
                         break;
                     case "6":
                         System.out.println("Get beers with water ingredient ratio and sort by ratio");
                         System.out.println("Beers: \n" + beerSelect.toString( beerSelect.getBeersByWater() ) );
+                        System.out.println(menu);
+                        break;
+                    case "7":
+                        System.out.println("Get a map where the keys are the prices rounded to the nearest hundred. \n" +
+                                           "The values are the beers.");
+                        System.out.println("Prices: \n" + beerSelect.toString(beerSelect.getPricesRounded()));
                         System.out.println(menu);
                         break;
                     default:
